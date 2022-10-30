@@ -1,4 +1,5 @@
 <template>
+    <img class="max-w-[15%]" src="/img/b-neon.jpg" alt="b-neon" />
     <p>This is the home page.</p>
     <p>
         Go to
