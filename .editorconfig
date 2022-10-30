@@ -1,5 +1,8 @@
 root = true
 
+[*.{js,ts,cjs}]
+quote_type = single
+
 [*]
 charset = utf-8
 end_of_line = lf

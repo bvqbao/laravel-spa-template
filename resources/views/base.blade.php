@@ -9,9 +9,9 @@
 </head>
 
 <body>
-    <div class="flex h-full min-h-screen w-full flex-col items-center bg-gray-100 p-12">
-        @yield('content')
-    </div>
+    @yield('content')
+
+    @yield('scripts')
 </body>
 
 </html>
