@@ -18,3 +18,5 @@ yarn-error.log
 /.vscode
 *.http
 /docker/nginx/logs/*.log
+/docker/nginx/ssl/*.crt
+/docker/nginx/ssl/*.key

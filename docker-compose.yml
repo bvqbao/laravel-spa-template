@@ -18,15 +18,18 @@ services:
       - 5173:5173
     volumes:
       - app_files:/app
+    command: sh -c "npm install && exec npm run dev"
 
   nginx:
     image: nginx:alpine
     restart: always
     ports:
       - 80:80
+      - 443:443
     volumes:
       - app_files:/app
       - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./docker/nginx/ssl:/etc/nginx/ssl
       - ./docker/nginx/logs:/var/log/nginx
     depends_on:
       - vite
